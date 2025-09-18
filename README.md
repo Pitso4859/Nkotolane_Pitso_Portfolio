@@ -1,108 +1,185 @@
-# 🌐 Portfolio Website  
+🌐 Pitso Nkotolane - Portfolio Website
+https://img.shields.io/badge/Java-17-blue?logo=java&logoColor=white
+https://img.shields.io/badge/Spring_Boot-3.0-green?logo=springboot&logoColor=white
+https://img.shields.io/badge/Thymeleaf-3.1-brightgreen?logo=thymeleaf&logoColor=white
+https://img.shields.io/badge/MySQL-8.0-orange?logo=mysql&logoColor=white
+https://img.shields.io/badge/Maven-3.9-red?logo=apachemaven&logoColor=white
+https://img.shields.io/badge/build-passing-brightgreen
+https://img.shields.io/badge/license-MIT-blue
 
-![Java](https://img.shields.io/badge/Java-17-blue?logo=java&logoColor=white)  
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.0-green?logo=springboot&logoColor=white)  
-![Thymeleaf](https://img.shields.io/badge/Thymeleaf-3.1-brightgreen?logo=thymeleaf&logoColor=white)  
-![MySQL](https://img.shields.io/badge/MySQL-8.0-orange?logo=mysql&logoColor=white)  
-![Maven](https://img.shields.io/badge/Maven-3.9-red?logo=apachemaven&logoColor=white)  
-![Build](https://img.shields.io/badge/build-passing-brightgreen)  
-![License](https://img.shields.io/badge/license-MIT-blue)  
+A professional portfolio web application built with Spring Boot, Thymeleaf, and MySQL showcasing my skills, projects, and experience as a Java developer.
 
-A personal portfolio web application built with **Spring Boot, Thymeleaf, HTML/CSS/JS, and MySQL**.  
-This project showcases personal information, projects, and a contact form with database integration.  
+✨ Features
+Responsive Design: Optimized for all device sizes
 
----
+Dark/Light Mode: User-selectable theme with persistent preferences
 
-## 📂 Project Structure  
+Interactive UI: Animated elements and smooth transitions
+
+Contact Form: Functional contact form with database persistence
+
+Project Showcase: Dedicated section for portfolio projects
+
+Skills Visualization: Animated progress bars for technical skills
+
+Professional Timeline: Education and experience timeline
+
+🛠️ Technology Stack
+Backend: Spring Boot, Spring MVC, Spring Data JPA
+
+Frontend: Thymeleaf, HTML5, CSS3, JavaScript
+
+Database: MySQL
+
+Build Tool: Maven
+
+Styling: Custom CSS with CSS variables for theming
+
+Icons: Font Awesome
+
+📁 Project Structure
+text
 Portfolio/
-│── .idea/                     # IDE settings  
-│── .mvn/                      # Maven wrapper files  
-│── src/  
-│   ├── main/  
-│   │   ├── java/Portfolio/  
-│   │   │   ├── Controller/          # Controllers (MainController)  
-│   │   │   ├── Model/               # Entities (ContactForm)  
-│   │   │   ├── Repository/          # JPA Repositories (ContactFormRepository)  
-│   │   │   └── PortfolioApplication # Main Spring Boot application  
-│   │   ├── resources/  
-│   │   │   ├── static/              # Static assets (CSS, JS, images, PDF)  
-│   │   │   │   ├── css/style.css  
-│   │   │   │   ├── js/script.js  
-│   │   │   │   ├── images/profile.png  
-│   │   │   │   └── Files/Nkotolane Pitso Gintos.pdf  
-│   │   │   └── templates/           # Thymeleaf templates  
-│   │   │       ├── fragments/ (header.html, footer.html)  
-│   │   │       ├── index.html  
-│   │   │       ├── AboutUs.html  
-│   │   │       ├── ContactUs.html  
-│   │   │       └── project.html  
-│   │   └── application.properties   # App configuration  
-│   └── test/java/Portfolio/  
-│       └── PortfolioApplicationTests  
-│── target/                    # Build output  
-│── pom.xml                    # Maven configuration  
-│── portfolio_db.sql           # Database schema  
-│── .gitignore  
-│── .gitattributes  
-│── HELP.md  
-│── mvnw / mvnw.cmd            # Maven wrapper scripts  
+├── src/
+│   ├── main/
+│   │   ├── java/Portfolio/
+│   │   │   ├── Controller/           # MVC Controllers
+│   │   │   ├── Model/                # Data entities (ContactForm)
+│   │   │   ├── Repository/           # Data repositories
+│   │   │   └── PortfolioApplication  # Main application class
+│   │   └── resources/
+│   │       ├── static/
+│   │       │   ├── css/style.css     # All styling with theme support
+│   │       │   ├── js/script.js      # Client-side functionality
+│   │       │   ├── images/           # Profile and project images
+│   │       │   └── Files/            # Resume/CV downloads
+│   │       ├── templates/            # Thymeleaf templates
+│   │       │   ├── fragments/        # Reusable template components
+│   │       │   ├── index.html        # Home page
+│   │       │   ├── AboutUs.html      # About page with skills
+│   │       │   ├── ContactUs.html    # Contact form page
+│   │       │   └── project.html      # Projects showcase
+│   │       └── application.properties # Application configuration
+├── target/                           # Build output directory
+├── pom.xml                          # Maven configuration
+└── README.md                        # Project documentation
+🚀 Installation & Setup
+Prerequisites
+Java 17 or higher
 
+MySQL 8.0 or higher
 
----
+Maven 3.6 or higher
 
-## 🚀 Features  
+Step-by-Step Setup
+Clone the repository
 
-- **Home Page** – Personal introduction with profile picture.  
-- **About Us Page** – Background, skills, and experience.  
-- **Projects Page** – Showcases portfolio projects.  
-- **Contact Us Page** – Contact form integrated with MySQL database.  
-- **Responsive Design** – Styled with custom CSS.  
-
----
-
-## 🛠️ Tech Stack  
-
-- **Backend**: Spring Boot, Spring MVC, Spring Data JPA  
-- **Frontend**: Thymeleaf, HTML5, CSS3, JavaScript  
-- **Database**: MySQL (`portfolio_db.sql`)  
-- **Build Tool**: Maven  
-
----
-
-## ⚙️ Setup & Installation  
-
-### 1️⃣ Clone the repository  
-
-```bash
+bash
 git clone https://github.com/your-username/portfolio.git
 cd portfolio
+Database Configuration
 
-2️⃣ Configure the database
-Create a database in MySQL (e.g., portfolio_db)
+Create a MySQL database named portfolio_db
 
-Import the schema:
+Update database credentials in src/main/resources/application.properties:
 
-mysql -u root -p portfolio_db < portfolio_db.sql
-Update src/main/resources/application.properties with your DB credentials:
+properties
+spring.datasource.url=jdbc:mysql://localhost:3306/portfolio_db
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+Build the Application
 
-3️⃣ Build & Run the app
-./mvnw spring-boot:run
-4️⃣ Access the site
-Open http://localhost:8080 in your browser.
+bash
+./mvnw clean package
+Run the Application
 
-🧪 Running Tests
+bash
+java -jar target/portfolio-0.0.1-SNAPSHOT.jar
+Access the Application
+Open your browser and navigate to http://localhost:8080
 
+📱 Pages Overview
+Home Page
+Personal introduction with profile picture
+
+Call-to-action buttons for navigation
+
+Responsive hero section with animations
+
+About Page
+Professional background and biography
+
+Skills section with animated progress bars
+
+Education and experience timeline
+
+Downloadable resume/CV
+
+Projects Page
+Showcase of portfolio projects
+
+Project descriptions with technology tags
+
+Visual project cards with hover effects
+
+Contact Page
+Functional contact form with validation
+
+Form submission to database
+
+Success/error message handling
+
+🎨 Customization
+To personalize this portfolio:
+
+Update Personal Information
+
+Modify content in HTML templates
+
+Replace src/main/resources/static/images/profile.png with your photo
+
+Update resume/CV in src/main/resources/static/Files/
+
+Customize Colors and Styling
+
+Edit CSS variables in src/main/resources/static/css/style.css
+
+Modify the color scheme in the :root and .dark-mode selectors
+
+Add Projects
+
+Update the projects section in the projects page
+
+Add project images to the static/images directory
+
+📊 Database Schema
+The application uses a single table for contact form submissions:
+
+sql
+CREATE TABLE contact_form (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    subject VARCHAR(200) NOT NULL,
+    message TEXT NOT NULL,
+    submitted_at DATETIME NOT NULL
+);
+🧪 Testing
+Run the test suite with:
+
+bash
 ./mvnw test
+📬 Contact
+Pitso Nkotolane Gintos
 
-
-📸 Screenshots
-<img width="1920" height="1080" alt="Screenshot (89)" src="https://github.com/user-attachments/assets/94f1b836-e6db-4c9b-9204-95470bb4c6dc" />
-<img width="1920" height="1080" alt="Screenshot (88)" src="https://github.com/user-attachments/assets/b5d19246-4369-45ca-87b6-a434bb695025" />
-<img width="1920" height="1080" alt="Screenshot (87)" src="https://github.com/user-attachments/assets/9691fd2c-9bfa-48fb-84c4-5e526c9a390c" />
-<img width="1920" height="1080" alt="Screenshot (86)" src="https://github.com/user-attachments/assets/fa2d152d-f8d6-41c7-a63d-45a9effab70d" />
-<img width="1920" height="1080" alt="Screenshot (90)" src="https://github.com/user-attachments/assets/6fb6df79-8070-4974-98ac-2dc284abeb21" />
-
-👤 Author
-Nkotolane Pitso Gintos
 📧 Email: pnkotolane@gmail.com
-🌐 LinkedIn: Pitso Nkotolane
+
+💼 LinkedIn: Pitso Nkotolane
+
+🌐 Portfolio: https://your-portfolio-url.com
+
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+🙏 Acknowledgments
+Icons provided by Font Awesome
