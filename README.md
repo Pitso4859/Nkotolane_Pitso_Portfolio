@@ -14,42 +14,39 @@ This project showcases personal information, projects, and a contact form with d
 ---
 
 ## 📂 Project Structure  
-
 Portfolio/
-│── .idea/ # IDE settings
-│── .mvn/ # Maven wrapper files
-│── src/
-│ ├── main/
-│ │ ├── java/Portfolio/
-│ │ │ ├── Controller/ # Controllers (MainController)
-│ │ │ ├── Model/ # Entities (ContactForm)
-│ │ │ ├── Repository/ # JPA Repositories (ContactFormRepository)
-│ │ │ └── PortfolioApplication # Main Spring Boot application
-│ │ ├── resources/
-│ │ │ ├── static/ # Static assets (CSS, JS, images, PDF)
-│ │ │ │ ├── css/style.css
-│ │ │ │ ├── js/script.js
-│ │ │ │ ├── images/profile.png
-│ │ │ │ └── Files/Nkotolane Pitso Gintos.pdf
-│ │ │ └── templates/ # Thymeleaf templates
-│ │ │ ├── fragments/ # header.html, footer.html
-│ │ │ ├── index.html
-│ │ │ ├── AboutUs.html
-│ │ │ ├── ContactUs.html
-│ │ │ └── project.html
-│ │ └── application.properties # App configuration
-│ └── test/java/Portfolio/
-│ └── PortfolioApplicationTests
-│── target/ # Build output
-│── pom.xml # Maven configuration
-│── portfolio_db.sql # Database schema
-│── .gitignore
-│── .gitattributes
-│── HELP.md
-│── mvnw / mvnw.cmd # Maven wrapper scripts
+│── .idea/                     # IDE settings  
+│── .mvn/                      # Maven wrapper files  
+│── src/  
+│   ├── main/  
+│   │   ├── java/Portfolio/  
+│   │   │   ├── Controller/          # Controllers (MainController)  
+│   │   │   ├── Model/               # Entities (ContactForm)  
+│   │   │   ├── Repository/          # JPA Repositories (ContactFormRepository)  
+│   │   │   └── PortfolioApplication # Main Spring Boot application  
+│   │   ├── resources/  
+│   │   │   ├── static/              # Static assets (CSS, JS, images, PDF)  
+│   │   │   │   ├── css/style.css  
+│   │   │   │   ├── js/script.js  
+│   │   │   │   ├── images/profile.png  
+│   │   │   │   └── Files/Nkotolane Pitso Gintos.pdf  
+│   │   │   └── templates/           # Thymeleaf templates  
+│   │   │       ├── fragments/ (header.html, footer.html)  
+│   │   │       ├── index.html  
+│   │   │       ├── AboutUs.html  
+│   │   │       ├── ContactUs.html  
+│   │   │       └── project.html  
+│   │   └── application.properties   # App configuration  
+│   └── test/java/Portfolio/  
+│       └── PortfolioApplicationTests  
+│── target/                    # Build output  
+│── pom.xml                    # Maven configuration  
+│── portfolio_db.sql           # Database schema  
+│── .gitignore  
+│── .gitattributes  
+│── HELP.md  
+│── mvnw / mvnw.cmd            # Maven wrapper scripts  
 
-yaml
-Copy code
 
 ---
 
@@ -79,35 +76,32 @@ Copy code
 ```bash
 git clone https://github.com/your-username/portfolio.git
 cd portfolio
+
 2️⃣ Configure the database
 Create a database in MySQL (e.g., portfolio_db)
 
 Import the schema:
 
-bash
-Copy code
 mysql -u root -p portfolio_db < portfolio_db.sql
 Update src/main/resources/application.properties with your DB credentials:
 
-properties
-Copy code
-spring.datasource.url=jdbc:mysql://localhost:3306/portfolio_db
-spring.datasource.username=root
-spring.datasource.password=yourpassword
-spring.jpa.hibernate.ddl-auto=update
 3️⃣ Build & Run the app
-bash
-Copy code
 ./mvnw spring-boot:run
 4️⃣ Access the site
 Open http://localhost:8080 in your browser.
 
 🧪 Running Tests
-bash
-Copy code
+
 ./mvnw test
+
+
 📸 Screenshots
-<img width="1920" height="1080" alt="Screenshot (90)" src="https://github.com/user-attachments/assets/aed13425-ac0a-4160-84af-18b25f60bb75" /> <img width="1920" height="1080" alt="Screenshot (89)" src="https://github.com/user-attachments/assets/91d9769a-0397-48af-a524-c668af1f6f7d" /> <img width="1920" height="1080" alt="Screenshot (88)" src="https://github.com/user-attachments/assets/b845b5e6-6eed-4637-9ec3-086a7069cdec" /> <img width="1920" height="1080" alt="Screenshot (87)" src="https://github.com/user-attachments/assets/d45d4d59-c386-4447-932b-ebdbc58b177c" /> <img width="1920" height="1080" alt="Screenshot (86)" src="https://github.com/user-attachments/assets/6bbe693e-7f10-4932-92de-4235ae5b2a9f" />
+<img width="1920" height="1080" alt="Screenshot (89)" src="https://github.com/user-attachments/assets/94f1b836-e6db-4c9b-9204-95470bb4c6dc" />
+<img width="1920" height="1080" alt="Screenshot (88)" src="https://github.com/user-attachments/assets/b5d19246-4369-45ca-87b6-a434bb695025" />
+<img width="1920" height="1080" alt="Screenshot (87)" src="https://github.com/user-attachments/assets/9691fd2c-9bfa-48fb-84c4-5e526c9a390c" />
+<img width="1920" height="1080" alt="Screenshot (86)" src="https://github.com/user-attachments/assets/fa2d152d-f8d6-41c7-a63d-45a9effab70d" />
+<img width="1920" height="1080" alt="Screenshot (90)" src="https://github.com/user-attachments/assets/6fb6df79-8070-4974-98ac-2dc284abeb21" />
+
 👤 Author
 Nkotolane Pitso Gintos
 📧 Email: pnkotolane@gmail.com
