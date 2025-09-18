@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="fragments/header :: head">
+    <title>My Projects | Pitso Nkotolane</title>
+</head>
+<body>
+<!-- Navigation -->
+<div th:replace="fragments/header :: navbar"></div>
+
+<!-- Hero Section -->
+<section class="projects-hero">
+    <div class="container">
+        <h1 class="hero-title">My Projects</h1>
+        <p class="hero-subtitle">A showcase of my recent work</p>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="section">
+    <div class="container">
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-img" style="background: linear-gradient(45deg, #3a0ca3, #4cc9f0);">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Student Management System</h3>
+                    <p>A SpringBoot application for managing student records with MySQL backend. Features CRUD operations, report generation, and user authentication.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">SpringWeb</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                    <a href="https://github.com/Pitso4859/Student-Management-System" class="btn btn-outline" target="_blank">
+                        <i class="fab fa-github me-2"></i>View Code
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-img" style="background: linear-gradient(45deg, #f72585, #ff9e00);">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Interactive JavaFx Calculator</h3>
+                    <p>A responsive calculator with advanced functionality including scientific operations, history tracking, and theme switching.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">JavaFx</span>
+                    </div>
+                    <a href="https://github.com/Pitso4859" class="btn btn-outline" target="_blank">
+                        <i class="fab fa-github me-2"></i>View Project
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-img" style="background: linear-gradient(45deg, #7209b7, #f72585);">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>Responsive personal portfolio with dark mode, project showcase, and contact form.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">SpringBoot</span>
+                    </div>
+                    <a href="https://github.com/Pitso4859/Nkotolane_Pitso_Portfolio" class="btn btn-outline" target="_blank">
+                        <i class="fab fa-github me-2"></i>View Code
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+</section>
+
+<!-- Footer -->
+<div th:replace="fragments/footer :: footer"></div>
+<script th:src="@{/js/script.js}"></script>
+</body>
+</html>

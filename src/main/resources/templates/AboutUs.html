@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="fragments/header :: head">
+    <title>About Me | Pitso Nkotolane</title>
+</head>
+<body>
+<!-- Navigation -->
+<div th:replace="fragments/header :: navbar"></div>
+
+<!-- Hero Section -->
+<section class="about-hero">
+    <div class="container">
+        <h1 class="hero-title">About Me</h1>
+        <p class="hero-subtitle">Get to know the person behind the code</p>
+    </div>
+</section>
+
+<!-- Profile Section -->
+<section class="section">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-image">
+                <div class="profile-img-placeholder">
+                    <div class="profile-img">
+                        <img th:src="@{/images/profile.png}" alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+            <div class="about-text">
+                <h2>Who I Am</h2>
+                <p>Hello! I'm <strong>Pitso Nkotolane Gintos</strong>,  passionate and motivated IT student at the Vaal University of Technology, specializing in software development with a strong focus on Java, Spring Boot, and database technologies like MySQL and PostgreSQL. I thrive on transforming complex problems into efficient, scalable, and user-friendly digital solutions.</p>
+                <p>My journey in technology is driven by a deep curiosity for how systems work and a commitment to continuous learning, as demonstrated by my certifications in networking, cybersecurity, and modern development frameworks. I believe in not just writing code, but crafting clean, impactful applications that make a difference.</p>
+                <p>When I'm not immersed in backend logic or designing intuitive interfaces with JavaFX and Thymeleaf, you can find me collaborating on projects using Git, exploring the fundamentals of cloud computing, or mentoring peers in programming fundamentals. My ultimate goal is to leverage my technical skills and problem-solving abilities to create software that delivers real-world value and a positive user experience.
+                </p>
+                <a href="Files/Nkotolane Pitso Gintos.pdf" class="btn btn-primary">
+                    <i class="fas fa-download me-2"></i>Download CV
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section class="section skills-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>My Skills</h2>
+            <p>Technologies I work with</p>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <div class="skill-header">
+                    <h3><i class="fas fa-code me-2"></i>Web Development & Framework</h3>
+                </div>
+                <div class="skill-body">
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>HTML5 & CSS3</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>JavaScript</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Springboot</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Bootstrap</span>
+                            <span>82%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 82%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="skill-header">
+                    <h3><i class="fas fa-database me-2"></i>Database Management</h3>
+                </div>
+                <div class="skill-body">
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>MySQL</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>PL/SQL</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>PostgresSQL</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="skill-category">
+                <div class="skill-header">
+                    <h3><i class="fas fa-laptop-code me-2"></i>Programming</h3>
+                </div>
+                <div class="skill-body">
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Java</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Networking</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Git & Version Control</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Timeline Section -->
+<section class="section timeline-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Education & Experience</h2>
+            <p>My professional journey</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2023 - Present</div>
+                    <h3>Diploma of Information Technology</h3>
+                    <h4>Vaal University of Technology</h4>
+                    <p>Specializing in Java development and object-oriented programming, with a strong foundation in data structures and database systems, maintaining a distinction average in core courses. Experienced in building scalable, database-driven applications using Spring Boot and Hibernate, with a focus on clean, efficient, and maintainable code for web and enterprise systems.</p>
+
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2025</div>
+                    <h3>Spring Boot Beginner Course & Git & GitHub Fundamentals </h3>
+                    <h4>AmigosCode.</h4>
+                    <p>Online Certification</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2022</div>
+                    <h3>Introduction to Networks Course</h3>
+                    <h4>Online Certification</h4>
+                    <p>Completed Cisco Introduction to Networks and JavaScript Essentials 1, gaining a strong foundation in data handling applicable to networking concepts and programming with JavaScript</p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+</section>
+
+<!-- Footer -->
+<div th:replace="fragments/footer :: footer"></div>
+<script th:src="@{/js/script.js}"></script>
+</body>
+</html>

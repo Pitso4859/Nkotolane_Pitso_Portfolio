@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="fragments/header :: head">
+    <title></title>
+</head>
+<body>
+<!-- Navigation -->
+<div th:replace="fragments/header :: navbar"></div>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Hello! I'm <span>Pitso Nkotolane</span></h1>
+                <h2 class="hero-subtitle"> Java & SpringBoot Developer</h2>
+                <p class="hero-description">
+                    IT student at Vaal University of Technology passionate about creating engaging, responsive,
+                    and user-friendly digital experiences across web and Java applications.
+                </p>
+                <div class="hero-buttons">
+                    <a href="Files/Nkotolane Pitso Gintos.pdf" class="btn btn-primary" download="Nkotolane Pitso Gintos.pdf">
+                        <i class="fas fa-download me-2"></i>Download CV
+                    </a>
+                    <a th:href="@{/ContactUs}" class="btn btn-outline">
+                        <i class="fas fa-envelope me-2"></i>Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-img-placeholder">
+                    <div class="profile-img">
+                        <img th:src="@{/images/profile.png}" alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<div th:replace="fragments/footer :: footer"></div>
+<script th:src="@{/js/script.js}"></script>
+</body>
+</html>

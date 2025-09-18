@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:fragment="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${#strings.capitalize(activePage)} + ' | Pitso Nkotolane'">Pitso Nkotolane | Portfolio</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<nav th:fragment="navbar" class="navbar">
+    <div class="container">
+        <a class="navbar-brand" th:href="@{/}">
+            <i class="fas fa-code"></i>PitsoDev
+        </a>
+        <div class="navbar-links">
+            <a class="nav-link" th:classappend="${activePage == 'home'} ? 'active'" th:href="@{/}">Home</a>
+            <a class="nav-link" th:classappend="${activePage == 'about'} ? 'active'" th:href="@{/AboutUs}">About</a>
+            <a class="nav-link" th:classappend="${activePage == 'projects'} ? 'active'" th:href="@{/project}">Projects</a>
+            <a class="nav-link" th:classappend="${activePage == 'contact'} ? 'active'" th:href="@{/ContactUs}">Contact</a>
+            <div class="theme-toggle" id="themeToggle">
+                <div class="toggle-thumb"></div>
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </div>
+</nav>
