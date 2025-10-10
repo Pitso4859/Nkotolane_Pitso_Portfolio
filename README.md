@@ -66,56 +66,56 @@ Portfolio/
 │   │       └── application.properties  # ⚙️ Configuration file
 ├── pom.xml                             # 🧰 Maven build configuration
 └── README.md                           # 📘 Project documentation
-
+---
 🚀 Installation & Setup
 🧩 Prerequisites
 ☕ Java 17+
 🐬 MySQL 8.0+
 🧱 Maven 3.6+
-
+---
 1️⃣ Clone the Repository
 git clone https://github.com/your-username/portfolio.git
 cd portfolio
-
+---
 2️⃣ Configure the Database
 Create a database:
 CREATE DATABASE portfolio_db;
-
+---
 Update your credentials in src/main/resources/application.properties:
 spring.datasource.url=jdbc:mysql://localhost:3306/portfolio_db
 spring.datasource.username=your_username
 spring.datasource.password=your_password
-
+---
 3️⃣ Build the Application
 ./mvnw clean package
-
+---
 4️⃣ Run the Application
 java -jar target/portfolio-0.0.1-SNAPSHOT.jar
-
+---
 5️⃣ Access the App
 🌍 http://localhost:8080
-
+---
 📱 Pages Overview| Page        | Description                                       |
 | ----------- | ------------------------------------------------- |
 | 🏠 Home     | Personal intro, hero section, and navigation      |
 | 👨‍💼 About | Background, skills visualization, and timeline    |
 | 💻 Projects | Showcase of portfolio projects with tags          |
 | ✉️ Contact  | Functional contact form with database persistence |
-
+--
 🎨 Customization
 🔧 Personal Info
 Update text in /templates HTML files
 Replace your photo in /static/images/profile.png
 Update your CV in /static/Files/
-
+---
 🎨 Styling
 Modify theme colors in /static/css/style.css
 Adjust variables under :root and .dark-mode
-
+---
 🧱 Add Projects
 Add new project cards in project.html
 Place project images under /static/images/
-
+---
 🗄️ Database Schema
 CREATE TABLE contact_form (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
@@ -125,22 +125,22 @@ CREATE TABLE contact_form (
     message TEXT NOT NULL,
     submitted_at DATETIME NOT NULL
 );
-
+---
 🧪 Testing
 
 Run all tests:
 ./mvnw test
-
+--
 📬 Contact
 👤 Pitso Nkotolane Gintos
 📧 pnkotolane@gmail.com
 💼 LinkedIn: Pitso Nkotolane
 🌐 Portfolio Website: Your Portfolio Link
-
+---
 📄 License
 This project is licensed under the MIT License – see the LICENSE
  file for details.
-
+---
 🙏 Acknowledgments
 💎 Icons by Font Awesome
 🌱 Built with passion using Spring Boot and Thymeleaf
