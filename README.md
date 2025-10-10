@@ -42,6 +42,9 @@ This responsive, modern, and elegant site features **interactive UI**, **dark/li
 ---
 
 ## 📁 Project Structure
+
+```bash
+
 Portfolio/
 ├── src/
 │   ├── main/
