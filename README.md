@@ -38,34 +38,7 @@ This responsive, modern, and elegant site features **interactive UI**, **dark/li
 | **Styling** | Custom CSS (with theme variables) |
 | **Icons** | Font Awesome |
 
----
 
-## 📁 Project Structure
-
-```bash
-Portfolio/
-├── src/
-│   ├── main/
-│   │   ├── java/Portfolio/
-│   │   │   ├── Controller/             # 🧭 MVC Controllers
-│   │   │   ├── Model/                  # 🧩 Data entities (e.g., ContactForm)
-│   │   │   ├── Repository/             # 💾 Data repositories
-│   │   │   └── PortfolioApplication    # 🚀 Main application class
-│   │   └── resources/
-│   │       ├── static/
-│   │       │   ├── css/style.css       # 🎨 Theme & styling
-│   │       │   ├── js/script.js        # ⚙️ Client-side logic
-│   │       │   ├── images/             # 🖼️ Profile & project images
-│   │       │   └── Files/              # 📂 Resume/CV downloads
-│   │       ├── templates/              # 🧱 Thymeleaf templates
-│   │       │   ├── fragments/          # 🧩 Shared components
-│   │       │   ├── index.html          # 🏠 Home page
-│   │       │   ├── AboutUs.html        # 👤 About page
-│   │       │   ├── ContactUs.html      # 💬 Contact form
-│   │       │   └── project.html        # 💡 Project showcase
-│   │       └── application.properties  # ⚙️ Configuration file
-├── pom.xml                             # 🧰 Maven build configuration
-└── README.md                           # 📘 Project documentation
 ---
 🚀 Installation & Setup
 🧩 Prerequisites
