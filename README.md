@@ -67,13 +67,13 @@ Portfolio/
 ├── pom.xml                             # 🧰 Maven build configuration
 └── README.md                           # 📘 Project documentation
 ---
-##🚀 Installation & Setup
+🚀 Installation & Setup
 🧩 Prerequisites
 ☕ Java 17+
 🐬 MySQL 8.0+
 🧱 Maven 3.6+
 ---
-##1️⃣ Clone the Repository
+1️⃣ Clone the Repository
 git clone https://github.com/your-username/portfolio.git
 cd portfolio
 ---
